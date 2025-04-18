@@ -4,9 +4,13 @@
   "description": "CLIPPY turns your content into ready-to-post reels, shorts, and images — instantly",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpm run --parallel dev"
+    "dev": "pnpm run --parallel dev",
+    "build": "pnpm run --parallel build"
   },
   "keywords": [],
   "author": "Yuuuk94",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "pnpm": {
+    "injectWorkspacePackages": true
+  }
 }
