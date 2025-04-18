@@ -1,13 +1,12 @@
 {
-  "name": "clipper",
+  "name": "clippy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "CLIPPY turns your content into ready-to-post reels, shorts, and images — instantly",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm run --parallel dev"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Yuuuk94",
+  "license": "UNLICENSED"
 }
