@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm run --parallel dev",
-    "build": "pnpm run --parallel build"
+    "build": "pnpm run --parallel build",
+    "docker:server": "docker build -f apps/server/Dockerfile -t clippy-server . && docker run -p 4000:4000 clippy-server"
   },
   "keywords": [],
   "author": "Yuuuk94",

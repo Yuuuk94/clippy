@@ -4,8 +4,8 @@ ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
 
 FROM base AS build_server
-COPY . /usr/src/apps
-WORKDIR /usr/src/apps 
+WORKDIR /usr/src
+COPY . .                                
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm --filter=server install --no-frozen-lockfile
 RUN pnpm --filter server run -r build
 RUN pnpm --filter server deploy --prod --legacy /prod/server
